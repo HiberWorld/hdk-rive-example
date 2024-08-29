@@ -23,6 +23,8 @@ const World = () => (
       }
       renderAfter={<placedPrefab id="goal_01" />}
     />
+    <RiveUI filename="low_health.riv" stretch="FILL" />
+    <RiveUI filename="game_over.riv" maxWidth={500} />
     <RiveUI
       filename="healthbar.riv"
       horizontalAlignment="LEFT"
@@ -38,8 +40,6 @@ const World = () => (
       maxWidth={300}
       zIndex={20}
     />
-    <RiveUI filename="low_health.riv" stretch="FILL" />
-    <RiveUI filename="game_over.riv" maxWidth={500} />
   </HNode>
 );
 render(<World />, {
