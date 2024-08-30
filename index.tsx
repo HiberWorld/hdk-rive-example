@@ -30,7 +30,7 @@ const World = () => (
       horizontalAlignment="LEFT"
       verticalAlignment="TOP"
       maxWidth={300}
-      margin={[30, 30, 20, 20]}
+      margin={[20, 20, 20, 20]}
       zIndex={10}
     />
     <RiveUI
@@ -38,11 +38,11 @@ const World = () => (
       horizontalAlignment="CENTER"
       verticalAlignment="TOP"
       maxWidth={300}
+      zIndex={20}
     />
   </HNode>
 );
-
 render(<World />, {
-  environment: "aurora_01",
+  environment: "midday_01",
   localAssets: true,
 });
