@@ -9,7 +9,7 @@ import { HNode, Prefab, RiveUI } from "@hiber3d/hdk-react/dist";
 
 const World = () => (
   <HNode>
-    <placedPrefab id="plane_01" z={10} y={-2} />
+    <Prefab id="plane_01" z={10} y={-2} />
     <Spawnpoint z={-20} />
     <Line
       z={-10}
@@ -25,24 +25,30 @@ const World = () => (
     />
     <RiveUI filename="low_health.riv" stretch="FILL" />
     <RiveUI filename="game_over.riv" maxWidth={500} />
+    <RiveUI filename="win_screen.riv" maxWidth={500} />
     <RiveUI
       filename="healthbar.riv"
-      horizontalAlignment="LEFT"
       verticalAlignment="TOP"
+      horizontalAlignment="LEFT"
       maxWidth={300}
-      margin={[20, 20, 20, 20]}
+      margin={[30, 30, 20, 20]}
       zIndex={10}
     />
     <RiveUI
       filename="collect_gem.riv"
-      horizontalAlignment="CENTER"
       verticalAlignment="TOP"
+      horizontalAlignment="RIGHT"
       maxWidth={300}
-      zIndex={20}
     />
   </HNode>
 );
+
+const baseUrl =
+  "https://cdn.hibervr.com/hiber2/web/john-full-sokol-bubble/v1.77.0-john-full-sokol-bubble.0%2B8123925cc/release";
+
 render(<World />, {
-  environment: "midday_01",
+  environment: "cloud_pillars_01",
+  engineUrl: `${baseUrl}/hiber.js`,
+  wasmUrl: `${baseUrl}/Hiberworld.wasm.gz`,
   localAssets: true,
 });
