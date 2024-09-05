@@ -40,7 +40,6 @@ const World = () => (
       horizontalAlignment="RIGHT"
       maxWidth={300}
     />
-    <RiveUI filename="win_screen.riv" maxWidth={300} />
   </HNode>
 );
 
