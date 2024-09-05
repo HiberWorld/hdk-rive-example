@@ -40,11 +40,11 @@ const World = () => (
       horizontalAlignment="RIGHT"
       maxWidth={300}
     />
+    <RiveUI filename="win_screen.riv" maxWidth={300} />
   </HNode>
 );
 
-const baseUrl =
-  "https://cdn.hibervr.com/hiber2/web/john-full-sokol-bubble/v1.77.0-john-full-sokol-bubble.0%2B8123925cc/release";
+const baseUrl = "https://dao-pr.dev.hiberdev.net/engine/dev/latest/release";
 
 render(<World />, {
   environment: "cloud_pillars_01",
