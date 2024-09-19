@@ -10,7 +10,7 @@
     "update": "npx update-by-scope \"@hiber3d\""
   },
   "dependencies": {
-    "@hiber3d/hdk-cli": "^1.1.20",
+    "@hiber3d/hdk-cli": "^1.1.22",
     "@hiber3d/hdk-core": "^1.0.15",
     "@hiber3d/hdk-react": "^1.1.13",
     "@hiber3d/hdk-react-components": "^1.1.4",
